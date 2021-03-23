@@ -1,0 +1,690 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    margin: 0px;
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*=========
+    HEADER
+  ==========*/
+
+header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.37) 82.29%, rgba(0, 0, 0, 0) 100%);
+    display: grid;
+    font-family: "Century Gothic", Arial;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+header.sticky {
+    background-color: #1b1b1b;
+}
+
+header:hover {
+    background-color: #1b1b1b;
+}
+
+.for-small-devices {
+    display: none;
+}
+
+.head {
+    grid-auto-rows: minmax(auto, auto);
+    grid-auto-columns: minmax(auto, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "upper"
+        "logo"
+        "second-nav";
+}
+
+.first-nav {
+    grid-area: upper;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav-a nav-b";
+    margin-top: 1.4rem;
+}
+
+.nav-a {
+    grid-area: nav-a;
+    display: inline-flex;
+    margin-left: 1rem;
+}
+
+.nav-b {
+    grid-area: nav-b;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+.second-nav {
+    grid-area: second-nav;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 1.1rem;
+}
+
+nav li {
+    display: inline-flex;
+    padding-left: .2rem;
+    font-size: 10.5px;
+    color: #E5DFD9;
+    padding-right: 1rem;
+    opacity: .9;
+    letter-spacing: .1px;
+}
+
+nav li a {
+    color: #E5DFD9;
+}
+
+nav li:hover,
+nav li a:hover {
+    color: #fff;
+    opacity: none;
+}
+
+.contact {
+    font-size: 12px;
+}
+
+.second-nav li {
+    margin-left: .6rem;
+    text-transform: uppercase;
+    font-size: 11.5px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-family: Arial;
+}
+
+.second-nav li a {
+    color: #fff;
+}
+
+/*------------- 
+      Icons 
+    -------------*/
+
+header .fa {
+    margin-right: 9px;
+    color: #e5dfd9;
+    opacity: .5;
+}
+
+.search {
+    width: 3%;
+    height: 3%;
+    cursor: pointer;
+    bottom: 10px;
+    position: relative;
+    left: 2%;
+}
+
+.search i {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2.5px solid #e5dfd9;
+    padding: 6px;
+}
+
+.fa-phone {
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+    transform: rotate(-140deg);
+
+}
+
+.fa-shopping-bag {
+    margin-right: 15px;
+}
+
+/*----------- 
+      Logo 
+    ----------*/
+
+.logo {
+    grid-area: logo;
+    display: inline-flex;
+    justify-content: center;
+    flex-basis: 50%;
+    height: 20px;
+    margin-left: 9.3em;
+    position: relative;
+    bottom: 24px;
+}
+
+.logo img {
+    width: 50%;
+    height: 25px;
+}
+
+/*=========
+   Footer
+ ==========*/
+
+.back-to-top {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    text-align: center;
+    float: right;
+    position: relative;
+    bottom: 17px;
+    right: 2%;
+}
+
+.back-to-top a {
+    color: #999;
+}
+
+footer {
+    width: 100%;
+    height: 455px;
+    margin-top: 17px;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: 'Helvetica';
+}
+
+footer section {
+    width: 98%;
+    height: inherit;
+}
+
+footer div {
+    width: 13%;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10px;
+    padding-left: 9px;
+    margin-top: 55px;
+}
+
+/*-------------
+    List section
+    --------------*/
+
+footer li {
+    list-style-type: none;
+    margin-top: 4px;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+}
+
+footer .title {
+    font-size: 12px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #999;
+    opacity: .8;
+    letter-spacing: .2px;
+    font-family: 'Helvetica';
+    font-weight: bold;
+    /*	font-stretch: expanded;*/
+}
+
+footer li a {
+    color: #E5DFD9;
+    font-size: 11px;
+}
+
+footer li a:hover {
+    color: #fff;
+}
+
+/*------ Link-icons ------*/
+
+.nav1 .fa {
+    font-size: 14px;
+    margin-right: 12px;
+    color: #999;
+}
+
+.nav4 .fa {
+    font-size: 14px;
+    margin-right: 12px;
+    color: #999;
+}
+
+.link_fb:hover .fa {
+    color: #1877F2;
+}
+
+.link_tw:hover .fa {
+    color: #1DA1F2;
+}
+
+.link_insta:hover .fa {
+    color: #325E86;
+}
+
+.link_gb:hover .fa {
+    color: #325E86;
+}
+
+.link_yt:hover .fa {
+    color: #DA2725;
+}
+
+.link_pin:hover .fa {
+    color: #CC2126;
+}
+
+.link_snap:hover .fa {
+    color: #FFFC00;
+}
+
+/*-------------
+    Right-side section
+           --------------*/
+
+.side {
+    width: 32%;
+    height: 360px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "title"
+        "para"
+        "formA"
+        "formB"
+        "imgs";
+    margin-left: 1rem;
+}
+
+.side .title {
+    grid-area: title;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.side .ft-text {
+    grid-area: para;
+    line-height: 15px;
+    font-size: 11px;
+    color: #999;
+    opacity: .9;
+    margin-right: 11px;
+}
+
+.side .ft-text a {
+    color: #999;
+    text-decoration: underline;
+}
+
+.side .ft-text a:hover {
+    color: #e5dfd9;
+}
+
+/*------- Forms ---------*/
+
+
+.footer-form {
+    width: 55%;
+    position: relative;
+    padding-right: 28px;
+    margin-top: 16px;
+}
+
+.form1 {
+    grid-area: formA;
+}
+
+.form2 {
+    grid-area: formB;
+    margin-bottom: 2rem;
+}
+
+form .input-box {
+    width: 120%;
+    height: 19px;
+    font-size: 12px;
+    background-color: #000;
+    color: #000;
+    border: 0;
+    padding: 5px 7px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+form .input-box::placeholder {
+    color: #E5DFD9;
+}
+
+form .input-box:focus::placeholder {
+    color: #000;
+    font-weight: 100;
+    opacity: .9;
+}
+
+.input-box:focus {
+    background-color: #fff;
+}
+
+#email-address {
+    text-indent: 0px;
+    display: block;
+}
+
+
+#store-location {
+    background-image: url('Gucci/Icons/PngItem_941550.png');
+    background-size: 3% 36%;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    display: block;
+    text-indent: 20px;
+}
+
+.submit {
+    width: 20%;
+    height: 29px;
+    padding: 5px;
+    background-color: #000;
+    color: #e5dfd9;
+    border: 0;
+    float: right;
+    position: relative;
+    bottom: 2.46rem;
+    left: 27.8%;
+}
+
+.submit .fa {
+    color: #e5dfd9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: rgb(75, 75, 75);
+}
+
+/*-------- Images --------*/
+
+.ft-links {
+    grid-area: imgs;
+    margin: 0 0;
+    width: 250px;
+    height: 50px;
+}
+
+.ft-links ul {
+    display: inline-flex;
+}
+
+.ft-links li {
+    margin: 0 8px;
+    position: relative;
+    bottom: 24px;
+}
+
+.ft-links img {
+    width: 60px;
+    height: 50px;
+    filter: opacity(.5);
+}
+
+.ft-links a:hover img {
+    filter: none;
+}
+
+/*-------- Copyright-text --------*/
+.copyright {
+    width: 41rem;
+    margin-left: 5px;
+    color: #999;
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+/*==============
+   Media Queries
+  ===============*/
+
+@media (max-width: 1024px) {
+
+    .disable-scroll {
+        overflow: hidden;
+    }
+
+    .head {
+        display: none;
+    }
+
+    header.sticky {
+        background-color: #1b1b1b;
+    }
+
+    .for-small-devices {
+        width: 100%;
+        background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.37) 82.29%, rgba(0, 0, 0, 0) 100%);
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "bars s-logo icons";
+        grid-gap: 10px;
+    }
+
+    .menu-scroll {
+        height: 100%;
+        overflow: scroll;
+    }
+
+    .for-small-devices .fa {
+        font-size: 20px;
+    }
+
+    .menu {
+        grid-area: bars;
+        margin: 20px 0 0 35px;
+        color: rgba(229, 223, 217, .5);
+        font-size: 21px;
+        font-weight: lighter;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    span.menu-text {
+        margin: 3px 0 0 5px;
+    }
+
+    .s-logo {
+        grid-area: s-logo;
+        margin: 25px auto;
+        width: 90%;
+        height: 30px;
+    }
+
+    .s-logo img {
+        height: 24px;
+        width: 38%;
+    }
+
+    .icon-links {
+        grid-area: icons;
+        margin: 30px 15px 0 0;
+    }
+
+    #close-btn {
+        position: absolute;
+        z-index: 2001;
+        color: #000;
+        font-weight: bolder;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        display: none;
+        width: 100%;
+        height: auto;
+        margin-left: .6rem;
+        text-transform: uppercase;
+        font-size: 11.5px;
+        font-weight: bold;
+        letter-spacing: .5px;
+        font-family: Arial;
+        position: absolute;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+    }
+
+    .list-container {
+        background-color: #fff;
+        display: grid;
+        grid-template-areas:
+            "categories-nav"
+            "Create-account"
+            "other-links";
+    }
+
+    .categories-nav {
+        grid-area: categories-nav;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        font-family: 'Century Gothic';
+        margin-top: 2.4rem;
+    }
+
+    .categories-nav li {
+        display: flex;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+    }
+
+    .categories-nav li a {
+        text-align: center;
+        margin: 10px auto;
+        color: #1b1b1b;
+
+    }
+
+    .Create-account-box {
+        grid-area: Create-account;
+        width: 100%;
+        display: grid;
+        background-image: url('Gucci/MenuFlyoutMedium_S11-Epilogue-new_001_Default.jpg');
+        justify-content: center;
+        align-content: center;
+    }
+
+    .Create-account-box .content-container {
+        font-family: 'Century Gothic';
+        font-size: 1rem;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: #fff;
+        width: 100%;
+        margin: 10px auto;
+        text-transform: none;
+        font-weight: 100;
+    }
+
+    .Heading {
+        margin-bottom: 20px;
+        text-align: center;
+        opacity: .9;
+    }
+
+    .Create-btn {
+        margin: 10px auto;
+        width: 100%;
+
+    }
+
+    .Create-btn button {
+        width: 45rem;
+        background-color: #fff;
+        border: none;
+        padding: 15px 0;
+
+    }
+
+    .Create-btn button a {
+        color: #1b1b1b;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: .75rem;
+    }
+
+    .other-links {
+        grid-area: other-links;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        font-family: 'Century Gothic';
+        margin-bottom: 2rem;
+    }
+
+    .other-links li {
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        font-size: .9rem;
+        text-align: center;
+        margin: 10px auto;
+        color: #1b1b1b;
+    }
+
+    .other-links li a {
+        text-align: center;
+        margin: 10px auto;
+        color: #1b1b1b;
+    }
+
+    .ship-to,
+    .client-services {
+        text-decoration: underline;
+        padding-left: 2px;
+    }
+
+}
+
+
+/*for footer*/
+/* @media (max-width: 767px) {
+
+} */

@@ -1,0 +1,321 @@
+/*==============
+      Hero 1
+    ============*/
+
+.bg {
+	width: 100%;
+	height: 34em;
+	position: relative;
+	background-image: url("Gucci/Handbags/images/Edited/DiaryHeroArticle_FS03-JACKIE-05_001_Default1.jpg");
+	background-size: 100% 34em;
+}
+
+/*---------
+    Text
+ ----------*/
+
+
+/*------ Heading -----*/
+
+.bg .text {
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	top: 46%;
+	line-height: 5px;
+}
+
+.bg .text h2 {
+	font-family: 'Didact Gothic', sans-serif;
+	text-transform: uppercase;
+	font-size: 65px;
+    letter-spacing: 5px;
+    line-height: 90px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+/*------------ 
+      Button
+    ------------*/
+
+.bg .text a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.bg .text button {
+	width: 13%;
+	background-color: #1b1b1b;
+	color: #e5dfd9;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	margin: 0 10px 15px 10px;
+	padding: 12px 5px;
+}
+
+.bg .text button:hover {
+	background-color: #313131;
+	cursor: pointer;
+}
+
+/*==============
+      Hero 2
+    ============*/
+
+.Hero-2-Wrapper {
+	height: 410px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.Hero-2-container {
+	width: 98%;
+	margin: 1em 1.4em;
+}
+
+.Hero-2-container figure {
+	background-color: #e7e7e7;
+	float: left;
+	margin: 0.3em;
+	width: 320px;
+	height: 410px;
+}
+
+.Hero-2-container figure img{
+	height: 210px;
+	width: 320px;
+}
+
+/*------- Heading --------*/
+
+.Hero-2-container figcaption {
+	margin: 1em auto;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.Hero-2-container h3 {
+	font-family: 'Didact Gothic', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 24px;
+	color: rgba(0, 0, 0, .85);
+}
+
+.Hero-2-container h3 .fa{
+	font-size: 25px;
+	margin-left: 3px;
+	color: #000;
+}
+
+/*------- Button --------*/
+
+.Hero-2-container a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.Hero-2-container button {
+	width: 10em;
+	background-color: #1b1b1b;
+	color: #e5dfd9;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	margin: 10px 10px 15px 10px;
+	padding: 12px 5px;
+}
+
+.Hero-2-container button:hover {
+	background-color: #313131;
+	cursor: pointer;
+}
+
+/*==============
+      Hero 3
+    ============*/
+
+.Wrapper-img {
+	height: 450px;
+	width: 100%;
+	background-image: url("Gucci/Handbags/images/Edited/HeroRegularStandard_EPILOGUE-21-054_001_Default.jpg");
+	background-size: 100% 450px;
+}
+
+/*-------- Text ---------*/
+
+.text {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	position: relative;
+	top: 11em;
+}
+
+/*------- Heading ---------*/
+
+.text h2 {
+	font-family: 'Didact Gothic', sans-serif;
+	text-transform: uppercase;
+	font-size: 65px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    font-weight: 100;
+    color: #fff;
+}
+
+/*-------- Button --------*/
+
+.text a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.text button {
+	width: 13%;
+	background-color: #1b1b1b;
+	color: #e5dfd9;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	margin: 5px 10px 15px 10px;
+	padding: 12px 5px;
+}
+
+.text button:hover {
+	background-color: #313131;
+	cursor: pointer;
+}
+
+/*==============
+      Hero 4
+    ============*/
+
+.Hero-4-Wrapper {
+	height: 410px;
+	margin: 0 auto;
+	margin-bottom: 1px;
+}
+
+.Hero-4-container {
+	width: 97%;
+	margin: 0 auto;
+	margin-left: 25px;
+}
+
+.Hero-4-container figure {
+	background-color: #f5f5f5;
+	float: left;
+	margin: 0 1px;
+	width: 49%;
+	height: 410px;
+}
+
+.Hero-4-container figure img{
+	margin: 0 auto;
+	margin-top: 8em;
+	margin-left: 6.5em;
+}
+
+/*------- Heading --------*/
+
+.Hero-4-container figcaption {
+	margin: 1em auto;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.Hero-4-container h3 {
+	font-family: 'Didact Gothic', sans-serif;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 100;
+	font-size: 24px;
+	color: rgba(0, 0, 0, .8);
+}
+
+.Hero-4-container h3 .fa{
+	font-size: 25px;
+	margin-left: 3px;
+	color: #000;
+}
+
+/*------- Button --------*/
+
+.Hero-4-container a {
+	font-size: 12px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.Hero-4-container a:hover {
+	opacity: .4;
+}
+
+/*===============
+     Hero 5 & 6
+    =============*/
+
+.Hero-5-Wrapper, .Hero-6-Wrapper {
+	height: 410px;
+	margin: 0 auto;
+	margin-bottom: 1px;
+}
+
+.container {
+	width: 97%;
+	margin: 0 auto;
+	margin-left: 25px;
+}
+
+.container figure {
+	background-color: #f5f5f5;
+	float: left;
+	margin: 0 1px;
+	width: 32.6%;
+	height: 410px;
+}
+
+.container figure img{
+	margin: 0 5em;
+	margin-top: 5em;
+}
+
+/*------- Heading --------*/
+
+.container figcaption {
+	margin: 1em auto;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.container h3 {
+	font-family: 'Didact Gothic', sans-serif;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 100;
+	font-size: 24px;
+	color: rgba(0, 0, 0, .7);
+}
+
+.container h3 .fa{
+	font-size: 25px;
+	margin-left: 3px;
+	color: #000;
+}
+
+/*------- Button --------*/
+
+.container a {
+	font-size: 12px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.container a:hover {
+	opacity: .4;
+}

@@ -1,0 +1,233 @@
+/*=========
+    Main
+ ==========*/
+
+
+main {
+	display: grid;
+	background-image: 
+	    url("Gucci/Whats-new/images/Edited/HeroRegularStandard_Epilogue-2021-pattern_001_Default.jpg");
+	height: 34em;
+	width: 100%;
+	background-size: 100% 34em;
+	justify-content: center;
+	align-items: center;
+}
+
+main .text{
+	text-align: center;
+	color: #fff;
+	margin-top: 6em;
+}
+
+main .text h1 {
+	font-family: "Century Gothic", Arial;
+	font-size: 65px;
+	letter-spacing: 5px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+main .text h1::after {
+	content: '';
+	width: 2.8em;
+	border: none;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	margin-top: 1.5em;
+	margin-left: -4.8em;
+	line-height: 1rem;
+}
+
+main .text p {
+	font-family: "Times New Roman";
+	font-style: italic;
+	font-size: 18px;
+	font-weight: bolder;
+	word-spacing: 3px;
+	line-height: 1rem;
+	margin-top: 2rem;
+}
+
+/*============
+   Section 1
+ ============*/
+
+.hero-1-Container {
+	width: 95%;
+	height: 41rem;
+	margin: 20px auto;
+	font-family: 'Century Gothic';
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+	". heading ."
+	". category .";
+	grid-row-gap: 5rem;
+	grid-column-gap: 7.5rem;
+}
+
+.heading {
+	grid-area: heading;
+	display: flex;
+	margin-top: 2.5rem;
+	justify-content: space-around;  
+}
+
+.heading h1 {
+	font-family: 'Nunito';
+	font-weight: 100;
+	color: rgba(49, 49, 49, 0.75);
+	letter-spacing: 4px;
+	font-size: 36px;
+}
+
+.heading h1::after {
+	content: '';
+	width: 3.9em;
+	border: none;
+	border-bottom: 1px solid #999;
+	position: absolute;
+	margin-top: 1.9em;
+	margin-left: -8.8rem;
+	line-height: 2rem;
+}
+
+.category {
+	grid-area: category;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-areas: 
+	"a b";
+	grid-column-gap: 4rem;
+}
+
+
+.category figcaption {
+	text-align: center;
+	margin-top: 1.8rem;
+}
+
+.category figcaption h4 {
+	font-family: "Times New Roman";
+	font-size: 20px;
+	font-style: italic;
+	color: #666;
+	font-weight: 100;
+	letter-spacing: -1px;
+}
+
+.category figcaption a {
+	font-size: 12px;
+	color: #1b1b1b;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 4em;
+}
+
+.category figcaption a:hover {
+	opacity: .4;
+}
+
+.category figcaption .fa {
+	color: #1b1b1b;
+}
+
+
+/*=========
+  Hero 2-6
+ ==========*/
+
+.container-bg-img {
+	display: grid;
+	height: 450px;
+	width: 100%;
+	background-size: 100% 450px;
+	justify-content: center;
+	align-content: center;
+}
+
+.container-bg-img .text {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Century Gothic";
+	font-weight: lighter;
+	color: #fff;
+}
+
+.container-bg-img h2 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+.container-bg-img button {
+	background: #1b1b1b;
+	border: none;
+	color: #fff;
+	padding: 10px 25px;
+	font-family: 'Century Gothic';
+	text-transform: uppercase;
+	margin-top: 1rem;
+	font-size: 13px;
+	letter-spacing: -.7px;
+	word-spacing: 1px;
+}
+
+.container-bg-img button:hover {
+	background-color: #313131;
+	cursor: pointer;
+}
+
+
+/*---------------
+      Hero 2
+    -------------*/
+
+.hero-2-container {
+	background-image: 
+	    url("Gucci/Whats-new/images/Edited/DiaryHeroArticle_S02-EPILOGUE-VIDEO-02_001_Default.jpg");
+}
+
+
+/*---------------
+      Hero 3
+    -------------*/
+
+.hero-3-container {
+	background-image: 
+	    url("Gucci/Whats-new/images/Edited/Gucci-Rouge-a-Levres-Satin-Lipstick-Lunar-New-Year-Edition.jpg");
+}
+
+/*---------------
+      Hero 4
+    -------------*/
+
+.hero-4-container {
+	background-image: 
+	    url("Gucci/Whats-new/images/Edited/HeroRegularStandard_EPILOGUE-21-013_001_Default.jpg");
+}
+
+
+/*---------------
+      Hero 5
+    -------------*/
+
+.hero-5-container {
+	background-image: 
+	    url("Gucci/Whats-new/images/Edited/DiaryHeroArticle_FS03-JACKIE-05_001_Default1.jpg");
+}
+
+
+/*---------------
+      Hero 6
+    -------------*/
+
+.hero-6-container {
+	background-image: 
+	    url("Gucci/Whats-new/images/Edited/HeroRegularSmall_EPILOGUE-21-079_001_Default.jpg");
+}
+
